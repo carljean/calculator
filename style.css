@@ -54,6 +54,11 @@ html, body {
     margin-bottom: 16px;
 }
 
+.screen p + p {
+    font-size: 36px;
+    margin-top: 24px;
+}
+
 .calc-body {
     /* border: 1px solid black; */
     height: 350px;
