@@ -48,16 +48,21 @@ html, body {
     font-size: 50px;
     border-radius: 15px;
     font-family: digital, sans-serif;
-    text-align: end;
+    /* text-align: end; */
     padding-right: 16px;
     padding-top: 8px;
     margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 32px;
 }
 
 .screen p + p {
     font-size: 36px;
-    margin-top: 24px;
+    /* margin-top: 2px; */
 }
+
 
 .calc-body {
     /* border: 1px solid black; */
@@ -101,5 +106,26 @@ button#equal {
     margin-bottom: 16px;
     margin-top: 8px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.special-btn > * {
+    width: 100%;
+    /* padding: 14px 8px; */
+    margin: 0;
+}
+
+.special-btn > button:first-child {
+    background-color: lightpink;
+    border: lightpink;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.special-btn > button:last-child {
+    background-color: lightgreen;
+    border: lightgreen;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
