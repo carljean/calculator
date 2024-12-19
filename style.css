@@ -45,22 +45,31 @@ html, body {
     width: var(--screen-width);
     margin: 0 auto;
     background-color: var(--screen-bg-color);
-    font-size: 50px;
+    /* font-size: 50px; */
     border-radius: 15px;
     font-family: digital, sans-serif;
     /* text-align: end; */
-    padding-right: 16px;
+    /* padding-right: 16px; */
     padding-top: 8px;
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 32px;
+    justify-content: center;
+    gap: 16px;
 }
 
-.screen p + p {
-    font-size: 36px;
-    /* margin-top: 2px; */
+.screen > div {
+    /* border: 1px solid black; */
+    padding-right: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 48px;
+    text-align: end;
+}
+
+.screen > div:last-child {
+    font-size: 35px;
 }
 
 
